@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskify </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+        <button onclick="w3_close()">Close &times;</button>
+    <div id="div1"> <a href="https://www.youtube.com/watch?v=SCIyIc8g0yY" target="_blank" class="w3-bar-item button">conseil pour organiser sa journée</a></div>
+    <div id="div2"><a href="https://www.youtube.com/watch?v=ejFsz3T6DUk" target="_blank" class="w3-bar-item button">conseil pour gérer son temps </a></div>
+    <div id="div3" ><a href="https://www.youtube.com/watch?v=eOOmP6IUtOk" target="_blank" class="w3-bar-item button">conseil pour organiser sa journée</a></div>
+    </div>
+
+    <!-------------------------------------- Bouton de la barre latérale --------------------------------------->
+    <div class="w3-teal">
+        <button class="button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+        <div class="w3-container">
+        </div>
+    </div>
+
+    <h1>Taskify</h1>
+    <div class="container">
+        <h1>ma liste de tâches </h1>
+        <input class="barre" type="text" id="taskinput" placeholder="Nouvelle tâche...">
+        <button id="taskinputBtn" placeholder="Nouvelle tâche..." >Ajouter</button>
+        <br>
+        <button id="clearAll">Effacer LocalStorage</button>
+        <ul id="taskList"></ul>
+        
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

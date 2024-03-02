@@ -1,0 +1,48 @@
+body{
+    font-family: Arial,  sans-serif;
+    background-image: url(/img/to-do-list.jpeg);
+  
+    background-size: cover;
+}
+.container{
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background-color: #f9f9f9;
+    align-items: center;
+   
+}
+h1{text-align: center;}
+
+button{border: solid;
+border-radius: 10px;
+transition: 0.2s;}
+button:hover{
+border-color: rgb(163, 39, 39);}
+
+.barre{padding: 0.5em 1em;} 
+
+.sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #333;
+    transition: left 0.3s;
+    z-index: 1;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+
+
+.w3-sidebar{height:100%;width:200px;background-color:rgb(255, 255, 255);position:fixed!important;z-index:1;overflow:none}
+.w3-bar-block .w3-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.w3-bar-block.w3-center .w3-bar-item{text-align:center}.w3-block{display:block;width:100%}
+
+
